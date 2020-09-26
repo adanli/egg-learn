@@ -1,0 +1,7 @@
+server:
+  port: 8081
+  address: localhost
+
+egg:
+  log:
+    dir: logs
