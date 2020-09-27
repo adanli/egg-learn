@@ -1,6 +1,12 @@
 # Webflux
 - 响应式编程是一种基于数据流和变化传递的声明式的编程规范  
 
+## lambda表达式练习
+### flatMap
+### collect
+### peek
+### reduce
+
 ## 从理论到落地的关系
 ### Reactive Streams API -> Reactor -> Webflux
 - Reactive Streams是标准，定义了一套规范化的API
@@ -88,6 +94,11 @@ interface Publisher {
     void subscriber(Subscriber s)
 }
 CorePublisher <|-- Mono
+abstract class Mono<T> {
+    T block()
+    Mono<T> cache()
+   
+}
 @enduml
 ```
 
